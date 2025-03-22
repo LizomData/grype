@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/vulnerability"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 
@@ -87,7 +87,7 @@ func TestMatcherRpm(t *testing.T) {
 			},
 		},
 		{
-			// Regression against https://github.com/anchore/grype/issues/376
+			// Regression against https://DIDTrustCore/issues/376
 			name: "Rpm Match matches by direct and by source indirection when the SourceRpm version is desynced from package version",
 			p: pkg.Package{
 				ID:      pkg.ID(uuid.NewString()),
@@ -118,7 +118,7 @@ func TestMatcherRpm(t *testing.T) {
 		},
 		{
 			// Epoch in pkg but not in src package version, epoch found in the vuln record
-			// Regression: https://github.com/anchore/grype/issues/437
+			// Regression: https://DIDTrustCore/issues/437
 			name: "Rpm Match should not occur due to source match even though source has no epoch",
 			p: pkg.Package{
 				ID:      pkg.ID(uuid.NewString()),

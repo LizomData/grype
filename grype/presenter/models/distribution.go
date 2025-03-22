@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/syft/syft/linux"
 )
 

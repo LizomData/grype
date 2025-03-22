@@ -1,4 +1,4 @@
-module github.com/anchore/grype
+module DIDTrustCore
 
 go 1.24.1
 

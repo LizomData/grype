@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/vulnerability"
 	"github.com/anchore/syft/syft/cpe"
 )
 

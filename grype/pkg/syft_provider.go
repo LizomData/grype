@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	"github.com/anchore/go-collections"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/stereoscope"
 	"github.com/anchore/stereoscope/pkg/image"
 	"github.com/anchore/syft/syft"

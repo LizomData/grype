@@ -7,12 +7,12 @@ import (
 	"strings"
 
 	hashiVer "github.com/anchore/go-version"
-	"github.com/anchore/grype/grype/db/v5/namespace/cpe"
-	"github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/db/v5/namespace/language"
-	grypeDistro "github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/db/v5/namespace/cpe"
+	"DIDTrustCore/grype/db/v5/namespace/distro"
+	"DIDTrustCore/grype/db/v5/namespace/language"
+	grypeDistro "DIDTrustCore/grype/distro"
+	"DIDTrustCore/internal"
+	"DIDTrustCore/internal/log"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

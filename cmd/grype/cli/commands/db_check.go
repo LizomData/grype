@@ -9,10 +9,10 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/cmd/grype/cli/options"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/internal/log"
 )
 
 const (

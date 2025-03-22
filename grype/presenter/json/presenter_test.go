@@ -12,10 +12,10 @@ import (
 
 	"github.com/anchore/clio"
 	"github.com/anchore/go-testutils"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/presenter/internal"
-	"github.com/anchore/grype/grype/presenter/models"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/presenter/internal"
+	"DIDTrustCore/grype/presenter/models"
 	"github.com/anchore/syft/syft/linux"
 	"github.com/anchore/syft/syft/source"
 )

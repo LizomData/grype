@@ -1,11 +1,11 @@
 package rpm
 
 import (
-	"github.com/anchore/grype/grype/pkg/qualifier"
-	"github.com/anchore/grype/grype/pkg/qualifier/rpmmodularity"
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/grype/vulnerability/mock"
+	"DIDTrustCore/grype/pkg/qualifier"
+	"DIDTrustCore/grype/pkg/qualifier/rpmmodularity"
+	"DIDTrustCore/grype/version"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/grype/vulnerability/mock"
 )
 
 func newMockProvider(packageName, indirectName string, withEpoch bool, withPackageQualifiers bool) vulnerability.Provider {

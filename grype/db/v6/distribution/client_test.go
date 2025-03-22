@@ -13,8 +13,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-progress"
 
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/internal/schemaver"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/internal/schemaver"
 )
 
 type mockGetter struct {

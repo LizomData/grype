@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/internal/log"
+	"DIDTrustCore/internal/stringutil"
 	"github.com/anchore/syft/syft/artifact"
 	"github.com/anchore/syft/syft/cpe"
 	"github.com/anchore/syft/syft/file"
@@ -152,7 +152,7 @@ func excludePackage(comprehensiveDistroFeed bool, p syftPkg.Package, parent syft
 // is comprehensive enough that we can drop packages owned by distro packages
 // before matching.
 func distroFeedIsComprehensive(distro *linux.Release) bool {
-	// TODO: this mechanism should be re-examined once https://github.com/anchore/grype/issues/1426
+	// TODO: this mechanism should be re-examined once https://DIDTrustCore/issues/1426
 	// is addressed
 	if distro == nil {
 		return false

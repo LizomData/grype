@@ -3,9 +3,9 @@ package internal
 import (
 	"fmt"
 
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/search"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/search"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 // onlyQualifiedPackages returns a criteria object that tests vulnerability qualifiers against the provided package

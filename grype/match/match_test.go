@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/vulnerability"
 	"github.com/anchore/syft/syft/cpe"
 )
 

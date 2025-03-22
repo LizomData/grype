@@ -6,13 +6,13 @@ import (
 
 	"github.com/dave/jennifer/jen"
 
-	"github.com/anchore/grype/grype/internal/packagemetadata"
+	"DIDTrustCore/grype/internal/packagemetadata"
 )
 
 // This program is invoked from grype/internal and generates packagemetadata/generated.go
 
 const (
-	pkgImport = "github.com/anchore/grype/grype/pkg"
+	pkgImport = "DIDTrustCore/grype/pkg"
 	path      = "packagemetadata/generated.go"
 )
 

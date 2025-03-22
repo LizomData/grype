@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver"
+	"DIDTrustCore/grype/db/v5/pkg/resolver"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

@@ -3,9 +3,9 @@ package platformcpe
 import (
 	"strings"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/pkg/qualifier"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/pkg/qualifier"
 	"github.com/anchore/syft/syft/cpe"
 )
 

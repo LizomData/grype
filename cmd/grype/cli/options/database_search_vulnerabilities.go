@@ -7,7 +7,7 @@ import (
 	"github.com/araddon/dateparse"
 
 	"github.com/anchore/clio"
-	v6 "github.com/anchore/grype/grype/db/v6"
+	v6 "DIDTrustCore/grype/db/v6"
 )
 
 type DBSearchVulnerabilities struct {

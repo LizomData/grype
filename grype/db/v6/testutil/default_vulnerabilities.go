@@ -1,8 +1,8 @@
 package dbtest
 
 import (
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/version"
+	"DIDTrustCore/grype/vulnerability"
 	"github.com/anchore/syft/syft/cpe"
 )
 

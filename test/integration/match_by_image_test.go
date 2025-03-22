@@ -10,22 +10,22 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/matcher"
-	"github.com/anchore/grype/grype/matcher/dotnet"
-	"github.com/anchore/grype/grype/matcher/golang"
-	"github.com/anchore/grype/grype/matcher/java"
-	"github.com/anchore/grype/grype/matcher/javascript"
-	"github.com/anchore/grype/grype/matcher/python"
-	"github.com/anchore/grype/grype/matcher/ruby"
-	"github.com/anchore/grype/grype/matcher/rust"
-	"github.com/anchore/grype/grype/matcher/stock"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/search"
-	"github.com/anchore/grype/grype/vex"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/grype"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/matcher"
+	"DIDTrustCore/grype/matcher/dotnet"
+	"DIDTrustCore/grype/matcher/golang"
+	"DIDTrustCore/grype/matcher/java"
+	"DIDTrustCore/grype/matcher/javascript"
+	"DIDTrustCore/grype/matcher/python"
+	"DIDTrustCore/grype/matcher/ruby"
+	"DIDTrustCore/grype/matcher/rust"
+	"DIDTrustCore/grype/matcher/stock"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/search"
+	"DIDTrustCore/grype/vex"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/stringutil"
 	"github.com/anchore/stereoscope/pkg/imagetest"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/cataloging/pkgcataloging"
@@ -695,7 +695,7 @@ func TestMatchByImage(t *testing.T) {
 				return expectedMatches
 			},
 		},
-		// TODO: add this back in when #744 is fully implemented (see https://github.com/anchore/grype/issues/744#issuecomment-2448163737)
+		// TODO: add this back in when #744 is fully implemented (see https://DIDTrustCore/issues/744#issuecomment-2448163737)
 		//{
 		//	name: "image-portage-match-coverage",
 		//	expectedFn: func(theSource source.Source, catalog *syftPkg.Collection, provider vulnerability.Provider) match.Matches {

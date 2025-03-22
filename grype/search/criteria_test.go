@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 func Test_CriteriaIterator(t *testing.T) {

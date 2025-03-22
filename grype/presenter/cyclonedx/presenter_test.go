@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/anchore/go-testutils"
-	"github.com/anchore/grype/grype/presenter/internal"
-	"github.com/anchore/grype/grype/presenter/models"
+	"DIDTrustCore/grype/presenter/internal"
+	"DIDTrustCore/grype/presenter/models"
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/sbom"
 )

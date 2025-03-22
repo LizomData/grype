@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm"
 
 	"github.com/anchore/go-logger"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/syft/syft/cpe"
 )
 

@@ -3,13 +3,13 @@ package format
 import (
 	"github.com/wagoodman/go-presenter"
 
-	"github.com/anchore/grype/grype/presenter/cyclonedx"
-	"github.com/anchore/grype/grype/presenter/json"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/grype/presenter/sarif"
-	"github.com/anchore/grype/grype/presenter/table"
-	"github.com/anchore/grype/grype/presenter/template"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/presenter/cyclonedx"
+	"DIDTrustCore/grype/presenter/json"
+	"DIDTrustCore/grype/presenter/models"
+	"DIDTrustCore/grype/presenter/sarif"
+	"DIDTrustCore/grype/presenter/table"
+	"DIDTrustCore/grype/presenter/template"
+	"DIDTrustCore/internal/log"
 )
 
 type PresentationConfig struct {

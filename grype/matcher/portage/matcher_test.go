@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/internal/stringutil"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

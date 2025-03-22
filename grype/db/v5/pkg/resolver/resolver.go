@@ -1,10 +1,10 @@
 package resolver
 
 import (
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/java"
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/python"
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/stock"
-	grypePkg "github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/java"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/python"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/stock"
+	grypePkg "DIDTrustCore/grype/pkg"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

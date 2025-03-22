@@ -8,7 +8,7 @@ import (
 
 	"github.com/anchore/bubbly"
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	"github.com/anchore/grype/grype/event"
+	"DIDTrustCore/grype/event"
 )
 
 var _ interface {

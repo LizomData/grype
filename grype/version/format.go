@@ -3,7 +3,7 @@ package version
 import (
 	"strings"
 
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/pkg"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

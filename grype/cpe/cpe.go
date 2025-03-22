@@ -3,7 +3,7 @@ package cpe
 import (
 	"github.com/facebookincubator/nvdtools/wfn"
 
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/syft/syft/cpe"
 )
 

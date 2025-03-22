@@ -1,7 +1,7 @@
 package match
 
 import (
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/pkg"
 )
 
 const (

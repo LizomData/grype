@@ -18,14 +18,14 @@ import (
 
 	"github.com/anchore/archiver/v3"
 	"github.com/anchore/clio"
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/schemaver"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/grype/event"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/bus"
+	"DIDTrustCore/internal/file"
+	"DIDTrustCore/internal/log"
+	"DIDTrustCore/internal/schemaver"
 )
 
 const lastUpdateCheckFileName = "last_update_check"

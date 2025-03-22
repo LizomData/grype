@@ -6,7 +6,7 @@ import (
 
 	"github.com/bmatcuk/doublestar/v2"
 
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/syft/syft/file"
 	"github.com/anchore/syft/syft/sbom"
 )

@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/pkg"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

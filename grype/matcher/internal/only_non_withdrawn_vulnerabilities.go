@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/anchore/grype/grype/search"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/search"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 // onlyNonWithdrawnVulnerabilities returns a criteria object that tests affected vulnerability is not withdrawn/rejected

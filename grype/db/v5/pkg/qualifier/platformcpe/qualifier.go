@@ -3,8 +3,8 @@ package platformcpe
 import (
 	"fmt"
 
-	"github.com/anchore/grype/grype/pkg/qualifier"
-	"github.com/anchore/grype/grype/pkg/qualifier/platformcpe"
+	"DIDTrustCore/grype/pkg/qualifier"
+	"DIDTrustCore/grype/pkg/qualifier/platformcpe"
 )
 
 type Qualifier struct {

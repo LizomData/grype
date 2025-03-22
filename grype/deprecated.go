@@ -1,11 +1,11 @@
 package grype
 
 import (
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/matcher"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/matcher"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/stereoscope/pkg/image"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/linux"

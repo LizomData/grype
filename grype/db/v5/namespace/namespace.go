@@ -1,7 +1,7 @@
 package namespace
 
 import (
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver"
+	"DIDTrustCore/grype/db/v5/pkg/resolver"
 )
 
 type Namespace interface {

@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	v6 "github.com/anchore/grype/grype/db/v6"
+	v6 "DIDTrustCore/grype/db/v6"
 )
 
 func TestNewVulnerabilityRows(t *testing.T) {

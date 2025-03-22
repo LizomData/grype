@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/internal/schemaver"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/internal/schemaver"
 )
 
 func TestNewLatestDocument(t *testing.T) {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	grypePkg "github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/stringutil"
+	grypePkg "DIDTrustCore/grype/pkg"
+	"DIDTrustCore/internal/log"
+	"DIDTrustCore/internal/stringutil"
 	"github.com/anchore/packageurl-go"
 )
 

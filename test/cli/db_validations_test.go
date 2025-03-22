@@ -14,9 +14,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	v6 "github.com/anchore/grype/grype/db/v6"
-	dbtest "github.com/anchore/grype/grype/db/v6/testutil"
-	"github.com/anchore/grype/internal/schemaver"
+	v6 "DIDTrustCore/grype/db/v6"
+	dbtest "DIDTrustCore/grype/db/v6/testutil"
+	"DIDTrustCore/internal/schemaver"
 )
 
 func TestDBValidations(t *testing.T) {

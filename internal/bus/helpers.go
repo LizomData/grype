@@ -4,8 +4,8 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/internal/redact"
+	"DIDTrustCore/grype/event"
+	"DIDTrustCore/internal/redact"
 )
 
 func Exit() {

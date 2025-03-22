@@ -3,8 +3,8 @@ package presenter
 import (
 	"github.com/wagoodman/go-presenter"
 
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/internal/format"
+	"DIDTrustCore/grype/presenter/models"
+	"DIDTrustCore/internal/format"
 )
 
 // GetPresenter retrieves a Presenter that matches a CLI option.

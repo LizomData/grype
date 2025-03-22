@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype/db/v5/namespace/cpe"
-	"github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/db/v5/namespace/language"
-	grypeDistro "github.com/anchore/grype/grype/distro"
+	"DIDTrustCore/grype/db/v5/namespace/cpe"
+	"DIDTrustCore/grype/db/v5/namespace/distro"
+	"DIDTrustCore/grype/db/v5/namespace/language"
+	grypeDistro "DIDTrustCore/grype/distro"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

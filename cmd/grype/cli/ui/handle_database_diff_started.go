@@ -8,9 +8,9 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/bubbly/bubbles/taskprogress"
-	"github.com/anchore/grype/grype/event/monitor"
-	"github.com/anchore/grype/grype/event/parsers"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/event/monitor"
+	"DIDTrustCore/grype/event/parsers"
+	"DIDTrustCore/internal/log"
 )
 
 type dbDiffProgressStager struct {

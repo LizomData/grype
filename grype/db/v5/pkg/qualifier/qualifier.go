@@ -3,7 +3,7 @@ package qualifier
 import (
 	"fmt"
 
-	"github.com/anchore/grype/grype/pkg/qualifier"
+	"DIDTrustCore/grype/pkg/qualifier"
 )
 
 type Qualifier interface {

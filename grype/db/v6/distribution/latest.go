@@ -11,9 +11,9 @@ import (
 
 	"github.com/spf13/afero"
 
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/schemaver"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/internal/file"
+	"DIDTrustCore/internal/schemaver"
 )
 
 const LatestFileName = "latest.json"

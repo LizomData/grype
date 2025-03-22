@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/pkg/qualifier"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/pkg/qualifier"
 )
 
 func TestPlatformCPE_Satisfied(t *testing.T) {

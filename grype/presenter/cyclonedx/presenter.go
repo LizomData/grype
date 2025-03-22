@@ -6,7 +6,7 @@ import (
 	"github.com/CycloneDX/cyclonedx-go"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/presenter/models"
+	"DIDTrustCore/grype/presenter/models"
 	"github.com/anchore/syft/syft/format/common/cyclonedxhelpers"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"

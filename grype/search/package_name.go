@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 // ByPackageName returns criteria restricting vulnerabilities to match the package name provided

@@ -7,11 +7,11 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/grype/vulnerability/mock"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/version"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/grype/vulnerability/mock"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

@@ -11,7 +11,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 	"github.com/anchore/syft/syft/cpe"
 )
 

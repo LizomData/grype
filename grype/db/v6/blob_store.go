@@ -8,7 +8,7 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/internal/log"
 )
 
 type blobable interface {

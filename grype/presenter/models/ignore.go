@@ -1,6 +1,6 @@
 package models
 
-import "github.com/anchore/grype/grype/match"
+import "DIDTrustCore/grype/match"
 
 type IgnoredMatch struct {
 	Match

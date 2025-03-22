@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/internal/schemaver"
+	"DIDTrustCore/internal/schemaver"
 )
 
 func TestReadDescription(t *testing.T) {

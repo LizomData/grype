@@ -3,7 +3,7 @@ package name
 import (
 	"regexp"
 
-	grypePkg "github.com/anchore/grype/grype/pkg"
+	grypePkg "DIDTrustCore/grype/pkg"
 )
 
 type PythonResolver struct {

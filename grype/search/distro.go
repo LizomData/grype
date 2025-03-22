@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/db/v5/namespace"
-	distroNs "github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/distro"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/db/v5/namespace"
+	distroNs "DIDTrustCore/grype/db/v5/namespace/distro"
+	"DIDTrustCore/grype/distro"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 // ByDistro returns criteria which will match vulnerabilities based on any of the provided Distros

@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/matcher/internal"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/matcher/internal"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/log"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anchore/grype/grype/db/v5/namespace/cpe"
-	"github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/db/v5/namespace/language"
+	"DIDTrustCore/grype/db/v5/namespace/cpe"
+	"DIDTrustCore/grype/db/v5/namespace/distro"
+	"DIDTrustCore/grype/db/v5/namespace/language"
 )
 
 func FromString(namespaceStr string) (Namespace, error) {

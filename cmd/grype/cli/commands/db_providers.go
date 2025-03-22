@@ -11,11 +11,11 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
-	v6 "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
-	"github.com/anchore/grype/internal/bus"
+	"DIDTrustCore/cmd/grype/cli/options"
+	v6 "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/grype/db/v6/installation"
+	"DIDTrustCore/internal/bus"
 )
 
 type dbProvidersOptions struct {

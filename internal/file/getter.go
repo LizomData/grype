@@ -11,7 +11,7 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/internal/stringutil"
 	"github.com/anchore/stereoscope/pkg/file"
 )
 

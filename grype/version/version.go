@@ -3,7 +3,7 @@ package version
 import (
 	"fmt"
 
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/pkg"
 	"github.com/anchore/syft/syft/cpe"
 )
 

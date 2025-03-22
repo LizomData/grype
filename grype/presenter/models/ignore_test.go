@@ -5,8 +5,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 func TestNewIgnoreRule(t *testing.T) {

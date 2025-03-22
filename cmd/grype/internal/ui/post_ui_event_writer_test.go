@@ -8,8 +8,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-partybus"
 
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/grype/event/parsers"
+	"DIDTrustCore/grype/event"
+	"DIDTrustCore/grype/event/parsers"
 )
 
 func Test_postUIEventWriter_write(t *testing.T) {

@@ -8,8 +8,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/presenter/models"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/presenter/models"
 	"github.com/anchore/syft/syft/file"
 )
 

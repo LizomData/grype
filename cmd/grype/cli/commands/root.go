@@ -9,29 +9,29 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
-	"github.com/anchore/grype/grype"
-	"github.com/anchore/grype/grype/event"
-	"github.com/anchore/grype/grype/event/parsers"
-	"github.com/anchore/grype/grype/grypeerr"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/matcher"
-	"github.com/anchore/grype/grype/matcher/dotnet"
-	"github.com/anchore/grype/grype/matcher/golang"
-	"github.com/anchore/grype/grype/matcher/java"
-	"github.com/anchore/grype/grype/matcher/javascript"
-	"github.com/anchore/grype/grype/matcher/python"
-	"github.com/anchore/grype/grype/matcher/ruby"
-	"github.com/anchore/grype/grype/matcher/stock"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/grype/vex"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/format"
-	"github.com/anchore/grype/internal/log"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/cmd/grype/cli/options"
+	"DIDTrustCore/grype"
+	"DIDTrustCore/grype/event"
+	"DIDTrustCore/grype/event/parsers"
+	"DIDTrustCore/grype/grypeerr"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/matcher"
+	"DIDTrustCore/grype/matcher/dotnet"
+	"DIDTrustCore/grype/matcher/golang"
+	"DIDTrustCore/grype/matcher/java"
+	"DIDTrustCore/grype/matcher/javascript"
+	"DIDTrustCore/grype/matcher/python"
+	"DIDTrustCore/grype/matcher/ruby"
+	"DIDTrustCore/grype/matcher/stock"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/presenter/models"
+	"DIDTrustCore/grype/vex"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal"
+	"DIDTrustCore/internal/bus"
+	"DIDTrustCore/internal/format"
+	"DIDTrustCore/internal/log"
+	"DIDTrustCore/internal/stringutil"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/cataloging"
 	"github.com/anchore/syft/syft/linux"
@@ -205,6 +205,115 @@ func runGrype(app clio.Application, opts *options.Grype, userInput string) (errs
 		return fmt.Errorf("failed to create document: %w", err)
 	}
 
+	if err = writer.Write(models.PresenterConfig{
+		ID:       app.ID(),
+		Document: model,
+		SBOM:     s,
+		Pretty:   opts.Pretty,
+	}); err != nil {
+		errs = appendErrors(errs, err)
+	}
+
+	return errs
+}
+
+func RunGrype(app clio.Application, opts *options.Grype, userInput string) (errs error) {
+	writer, err := format.MakeScanResultWriter(opts.Outputs, opts.File, format.PresentationConfig{
+		TemplateFilePath: opts.OutputTemplateFile,
+		ShowSuppressed:   opts.ShowSuppressed,
+		Pretty:           opts.Pretty,
+	})
+	if err != nil {
+		return err
+	}
+
+	var vp vulnerability.Provider
+	var status *vulnerability.ProviderStatus
+	var packages []pkg.Package
+	var s *sbom.SBOM
+	var pkgContext pkg.Context
+
+	if opts.OnlyFixed {
+		opts.Ignore = append(opts.Ignore, ignoreNonFixedMatches...)
+	}
+
+	if opts.OnlyNotFixed {
+		opts.Ignore = append(opts.Ignore, ignoreFixedMatches...)
+	}
+
+	if !opts.MatchUpstreamKernelHeaders {
+		opts.Ignore = append(opts.Ignore, ignoreLinuxKernelHeaders...)
+	}
+
+	for _, ignoreState := range stringutil.SplitCommaSeparatedString(opts.IgnoreStates) {
+		switch vulnerability.FixState(ignoreState) {
+		case vulnerability.FixStateUnknown, vulnerability.FixStateFixed, vulnerability.FixStateNotFixed, vulnerability.FixStateWontFix:
+			opts.Ignore = append(opts.Ignore, match.IgnoreRule{FixState: ignoreState})
+		default:
+			return fmt.Errorf("unknown fix state %s was supplied for --ignore-states", ignoreState)
+		}
+	}
+
+	err = parallel(
+		func() error {
+			checkForAppUpdate(app.ID(), opts)
+			return nil
+		},
+		func() (err error) {
+			log.Debug("loading DB")
+			vp, status, err = grype.LoadVulnerabilityDB(opts.ToClientConfig(), opts.ToCuratorConfig(), opts.DB.AutoUpdate)
+			return validateDBLoad(err, status)
+		},
+		func() (err error) {
+			log.Debugf("gathering packages")
+			// packages are grype.Package, not syft.Package
+			// the SBOM is returned for downstream formatting concerns
+			// grype uses the SBOM in combination with syft formatters to produce cycloneDX
+			// with vulnerability information appended
+			packages, pkgContext, s, err = pkg.Provide(userInput, getProviderConfig(opts))
+			if err != nil {
+				return fmt.Errorf("failed to catalog: %w", err)
+			}
+			return nil
+		},
+	)
+
+	if err != nil {
+		return err
+	}
+
+	defer log.CloseAndLogError(vp, status.Path)
+
+	if err = applyVexRules(opts); err != nil {
+		return fmt.Errorf("applying vex rules: %w", err)
+	}
+
+	applyDistroHint(packages, &pkgContext, opts)
+
+	vulnMatcher := grype.VulnerabilityMatcher{
+		VulnerabilityProvider: vp,
+		IgnoreRules:           opts.Ignore,
+		NormalizeByCVE:        opts.ByCVE,
+		FailSeverity:          opts.FailOnSeverity(),
+		Matchers:              getMatchers(opts),
+		VexProcessor: vex.NewProcessor(vex.ProcessorOptions{
+			Documents:   opts.VexDocuments,
+			IgnoreRules: opts.Ignore,
+		}),
+	}
+
+	remainingMatches, ignoredMatches, err := vulnMatcher.FindMatches(packages, pkgContext)
+	if err != nil {
+		if !errors.Is(err, grypeerr.ErrAboveSeverityThreshold) {
+			return err
+		}
+		errs = appendErrors(errs, err)
+	}
+
+	model, err := models.NewDocument(app.ID(), packages, pkgContext, *remainingMatches, ignoredMatches, vp, opts, dbInfo(status, vp), models.SortByPackage)
+	if err != nil {
+		return fmt.Errorf("failed to create document: %w", err)
+	}
 	if err = writer.Write(models.PresenterConfig{
 		ID:       app.ID(),
 		Document: model,

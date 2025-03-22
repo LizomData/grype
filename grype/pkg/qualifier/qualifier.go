@@ -1,7 +1,7 @@
 package qualifier
 
 import (
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/pkg"
 )
 
 type Qualifier interface {

@@ -15,7 +15,7 @@ import (
 	"github.com/scylladb/go-set/strset"
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/match"
+	"DIDTrustCore/grype/match"
 	"github.com/anchore/syft/syft"
 	"github.com/anchore/syft/syft/sbom"
 	"github.com/anchore/syft/syft/source"

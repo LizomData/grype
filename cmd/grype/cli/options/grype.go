@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/format"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/format"
 	"github.com/anchore/syft/syft/source"
 )
 
@@ -169,7 +169,7 @@ valid values are: registry, docker, podman`)
   - './out/**/*.json'
 same as --exclude`)
 	descriptions.Add(&o.File, `if using template output, you must provide a path to a Go template file
-see https://github.com/anchore/grype#using-templates for more information on template output
+see https://DIDTrustCore#using-templates for more information on template output
 the default path to the template file is the current working directory
 output-template-file: .grype/html.tmpl
 

@@ -10,8 +10,8 @@ import (
 	gocvss31 "github.com/pandatix/go-cvss/31"
 	gocvss40 "github.com/pandatix/go-cvss/40"
 
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/log"
 )
 
 func extractSeverities(vuln *VulnerabilityHandle) (vulnerability.Severity, []vulnerability.Cvss, error) {

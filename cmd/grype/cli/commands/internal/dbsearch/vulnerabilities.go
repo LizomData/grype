@@ -6,8 +6,8 @@ import (
 	"sort"
 	"time"
 
-	v6 "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/internal/log"
+	v6 "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/internal/log"
 )
 
 // Vulnerabilities is the JSON document for the `db search vuln` command

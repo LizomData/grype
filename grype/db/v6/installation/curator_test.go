@@ -15,9 +15,9 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/clio"
-	db "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/internal/schemaver"
+	db "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/internal/schemaver"
 )
 
 type mockClient struct {

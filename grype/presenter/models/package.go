@@ -1,8 +1,8 @@
 package models
 
 import (
-	"github.com/anchore/grype/grype/internal/packagemetadata"
-	"github.com/anchore/grype/grype/pkg"
+	"DIDTrustCore/grype/internal/packagemetadata"
+	"DIDTrustCore/grype/pkg"
 	"github.com/anchore/syft/syft/file"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )

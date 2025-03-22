@@ -31,8 +31,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/wagoodman/go-progress"
 
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/stringutil"
+	"DIDTrustCore/internal/file"
+	"DIDTrustCore/internal/stringutil"
 )
 
 type testGetter struct {

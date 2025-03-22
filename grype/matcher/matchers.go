@@ -1,20 +1,20 @@
 package matcher
 
 import (
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/matcher/apk"
-	"github.com/anchore/grype/grype/matcher/dotnet"
-	"github.com/anchore/grype/grype/matcher/dpkg"
-	"github.com/anchore/grype/grype/matcher/golang"
-	"github.com/anchore/grype/grype/matcher/java"
-	"github.com/anchore/grype/grype/matcher/javascript"
-	"github.com/anchore/grype/grype/matcher/msrc"
-	"github.com/anchore/grype/grype/matcher/portage"
-	"github.com/anchore/grype/grype/matcher/python"
-	"github.com/anchore/grype/grype/matcher/rpm"
-	"github.com/anchore/grype/grype/matcher/ruby"
-	"github.com/anchore/grype/grype/matcher/rust"
-	"github.com/anchore/grype/grype/matcher/stock"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/matcher/apk"
+	"DIDTrustCore/grype/matcher/dotnet"
+	"DIDTrustCore/grype/matcher/dpkg"
+	"DIDTrustCore/grype/matcher/golang"
+	"DIDTrustCore/grype/matcher/java"
+	"DIDTrustCore/grype/matcher/javascript"
+	"DIDTrustCore/grype/matcher/msrc"
+	"DIDTrustCore/grype/matcher/portage"
+	"DIDTrustCore/grype/matcher/python"
+	"DIDTrustCore/grype/matcher/rpm"
+	"DIDTrustCore/grype/matcher/ruby"
+	"DIDTrustCore/grype/matcher/rust"
+	"DIDTrustCore/grype/matcher/stock"
 )
 
 // Config contains values used by individual matcher structs for advanced configuration

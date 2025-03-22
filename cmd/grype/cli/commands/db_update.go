@@ -6,11 +6,11 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/cmd/grype/cli/options"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/cmd/grype/cli/options"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/grype/db/v6/installation"
+	"DIDTrustCore/internal/bus"
+	"DIDTrustCore/internal/log"
 )
 
 func DBUpdate(app clio.Application) *cobra.Command {

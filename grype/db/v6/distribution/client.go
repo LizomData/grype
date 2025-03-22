@@ -16,10 +16,10 @@ import (
 	"github.com/wagoodman/go-progress"
 
 	"github.com/anchore/clio"
-	v6 "github.com/anchore/grype/grype/db/v6"
-	"github.com/anchore/grype/internal/bus"
-	"github.com/anchore/grype/internal/file"
-	"github.com/anchore/grype/internal/log"
+	v6 "DIDTrustCore/grype/db/v6"
+	"DIDTrustCore/internal/bus"
+	"DIDTrustCore/internal/file"
+	"DIDTrustCore/internal/log"
 )
 
 type Config struct {

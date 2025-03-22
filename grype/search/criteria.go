@@ -7,7 +7,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 // ------- Utilities -------

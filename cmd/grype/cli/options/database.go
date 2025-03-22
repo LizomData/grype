@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	"github.com/anchore/grype/grype/db/v6/installation"
+	"DIDTrustCore/grype/db/v6/distribution"
+	"DIDTrustCore/grype/db/v6/installation"
 )
 
 type Database struct {

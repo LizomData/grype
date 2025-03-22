@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/anchore/grype/grype/version"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/version"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/log"
 )
 
 // VersionConstraintMatcher is used for searches which include version.Constraints; this should be used instead of

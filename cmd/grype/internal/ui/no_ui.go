@@ -6,7 +6,7 @@ import (
 	"github.com/wagoodman/go-partybus"
 
 	"github.com/anchore/clio"
-	"github.com/anchore/grype/grype/event"
+	"DIDTrustCore/grype/event"
 )
 
 var _ clio.UI = (*NoUI)(nil)

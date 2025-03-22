@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/anchore/grype/grype/db/v6/distribution"
-	dbtest "github.com/anchore/grype/grype/db/v6/testutil"
+	"DIDTrustCore/grype/db/v6/distribution"
+	dbtest "DIDTrustCore/grype/db/v6/testutil"
 )
 
 func Test_NewServer(t *testing.T) {

@@ -1,7 +1,7 @@
 package name
 
 import (
-	grypePkg "github.com/anchore/grype/grype/pkg"
+	grypePkg "DIDTrustCore/grype/pkg"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 

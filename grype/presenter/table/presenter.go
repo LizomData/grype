@@ -9,9 +9,9 @@ import (
 	"github.com/olekukonko/tablewriter"
 	"github.com/scylladb/go-set/strset"
 
-	"github.com/anchore/grype/grype/db/v5/namespace/distro"
-	"github.com/anchore/grype/grype/presenter/models"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/db/v5/namespace/distro"
+	"DIDTrustCore/grype/presenter/models"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 const (

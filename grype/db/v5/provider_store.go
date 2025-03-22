@@ -1,8 +1,8 @@
 package v5
 
 import (
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/vulnerability"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/vulnerability"
 )
 
 type ProviderStore struct {

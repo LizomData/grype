@@ -3,10 +3,10 @@ package internal
 import (
 	"errors"
 
-	"github.com/anchore/grype/grype/match"
-	"github.com/anchore/grype/grype/pkg"
-	"github.com/anchore/grype/grype/vulnerability"
-	"github.com/anchore/grype/internal/log"
+	"DIDTrustCore/grype/match"
+	"DIDTrustCore/grype/pkg"
+	"DIDTrustCore/grype/vulnerability"
+	"DIDTrustCore/internal/log"
 )
 
 func MatchPackageByEcosystemAndCPEs(store vulnerability.Provider, p pkg.Package, matcher match.MatcherType, includeCPEs bool) ([]match.Match, []match.IgnoredMatch, error) {

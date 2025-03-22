@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/java"
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/python"
-	"github.com/anchore/grype/grype/db/v5/pkg/resolver/stock"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/java"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/python"
+	"DIDTrustCore/grype/db/v5/pkg/resolver/stock"
 	syftPkg "github.com/anchore/syft/syft/pkg"
 )
 
